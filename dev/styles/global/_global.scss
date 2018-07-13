@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This is defines what 1rem is
+  font-size: 62.5%; //1 rem  = 10px; 10px/16px = 62.5%;
+
+  @include res(tab-land) {
+    font-size: 56.25%; //1 rem  = 9px olmasını istiyoruz o zaman 9/16 = 56.25%;
+  }
+
+  @include res(tab-port) {
+    font-size: 50%; //1 rem  = 8px olmasını istiyoruz o zaman 8/16 = 50%;
+  }
+
+  @include res(big) {
+    font-size: 75%; //1 rem = 12, 12/16;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #E67E22;
+}
+
+/*
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+*/

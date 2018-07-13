@@ -1,0 +1,15 @@
+@import "components/button";
+//
+@import "config/mixins";
+@import "config/variables";
+//
+@import "global/header";
+@import "global/footer";
+@import "global/global";
+//
+@import "helper/normalize";
+@import "helper/formalize";
+@import "helper/animation";
+//
+@import "pages/home";
+//plugin
